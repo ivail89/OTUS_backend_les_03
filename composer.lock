@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c5193b8b2a41373e52d41bc6235e0f75",
+    "packages": [
+        {
+            "name": "ivananreevich/otus-backend-les-package",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivail89/OTUS_backend_les_02_package.git",
+                "reference": "cdca8fefea58f986a235dcfca4634a7a9131877f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivail89/OTUS_backend_les_02_package/zipball/cdca8fefea58f986a235dcfca4634a7a9131877f",
+                "reference": "cdca8fefea58f986a235dcfca4634a7a9131877f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Mironov",
+                    "email": "ivail89@mail.ru"
+                }
+            ],
+            "description": "Create my first package like student OTUS",
+            "support": {
+                "issues": "https://github.com/ivail89/OTUS_backend_les_02_package/issues",
+                "source": "https://github.com/ivail89/OTUS_backend_les_02_package/tree/master"
+            },
+            "time": "2021-06-08T08:48:54+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "ivananreevich/otus-backend-les-package": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

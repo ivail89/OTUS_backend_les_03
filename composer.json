@@ -1,0 +1,16 @@
+{
+  "name": "ivananreevich/cli-client",
+  "description": "Use my own package",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ivan Mironov",
+      "email": "ivail89@mail.ru"
+    }
+  ],
+  "require": {
+    "ivananreevich/otus-backend-les-package": "dev-master",
+    "ext-sockets": "*"
+  }
+}
