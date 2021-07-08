@@ -11,6 +11,8 @@
   ],
   "require": {
     "ivananreevich/otus-backend-les-package": "dev-master",
-    "ext-sockets": "*"
+    "symfony/yaml": "v5.3.3",
+    "ext-sockets": "*",
+    "ext-pcntl": "*"
   }
 }

@@ -5,6 +5,8 @@ RUN apt-get update && apt-get install -y wget git unzip \
     && pecl install xdebug
 
 RUN docker-php-ext-install sockets
+RUN docker-php-ext-install pcntl
+
 RUN echo "zend_extension = xdebug.so" >> /usr/local/etc/php/php.ini
 
 RUN echo "xdebug.mode=debug" >> /usr/local/etc/php/php.ini

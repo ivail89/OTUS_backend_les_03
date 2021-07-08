@@ -1,10 +1,19 @@
 <?php
 error_reporting(E_ALL);
 
+require_once 'vendor/autoload.php';
+
 $address = '127.0.0.1';
 
-echo "Hello, please type port: ";
-$port = filter_var(trim(fgets(STDIN)), FILTER_VALIDATE_INT);
+$options = getopt('p:', ['path:']);
+if (empty($options)) {
+  die('Укажите обязательные параметры');
+}
+
+$path = ($options['path']) ?? ($options['p']);
+$configs = \Symfony\Component\Yaml\Yaml::parseFile(trim($path));
+
+$port = filter_var($configs['port'], FILTER_VALIDATE_INT);
 if ($port === false) {
   echo "Номер порта должен быть целым числом \n";
   die();
