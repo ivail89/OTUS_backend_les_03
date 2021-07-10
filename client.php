@@ -28,6 +28,7 @@ if ($socket === false) {
 } else {
   echo "OK.\n";
 }
+stream_set_timeout($socket, 5);
 
 echo "Пытаемся соединиться с '$address' на порту '$port'...";
 $result = socket_connect($socket, $address, $port);
